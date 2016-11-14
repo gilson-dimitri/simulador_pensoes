@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOSSA SEGUROS | SIMULADOR</title>
+
+    <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-6">
+	              <!-- Logo -->
+	              <div class="logo">
+	               <h1>
+                      <a href="index.html">
+                        <img src="images/ns_logo.svg">
+                      </a>
+                </h1>
+	              </div>
+	           </div>
+	           <div class="col-md-6">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Olá <strong>Fulano de tal</strong> <b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+                            <li><a href="#"><i class="glyphicon glyphicon-time"></i> Histórico de simulações</a></li>
+	                          <li><a href="#"><i class="glyphicon glyphicon-user"></i> Meus dados</a></li>
+	                          <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Sair</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="container corpo">
+      <!-- Conteúdo -->
+        <div class="row">
+            <div class="col-md-12 breadscrumb">
+              <ul class="list-inline">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="simulacao_individual.html">Simulação Individual</a></li>
+                <li><strong>Cenário 2</strong></li>
+              </ul>
+            </div>
+          </div>
+        <div class="row steps_container">
+          <div class="col-sm-6">
+            <h4>Passo selecionado</h4>
+            <p>Etiam rutrum nibh at ipsum fermentum sagittis.<br>Vestibulum vitae congue ex, non feugiat orci.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="steps">
+              <span>1</span>
+              <span class="active">2</span>
+              <span>3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row box content_box">
+          <div class="col-md-7">
+            <form>
+              <div class="row">
+                <div class="col-sm-5 form-group">
+                  <label>Estimativa de rentabilidade anual
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Sit amet, consectetur adipiscing elit.">(?)</a>:
+                  </label><br>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      1% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      2% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      3% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      4% </label>
+                </div>
+                <div class="col-sm-4 form-group">
+                  <label class="control-label">Valor da pensão a receber
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">(?)</a>:
+                  </label>
+                  <input class="form-control" type="text">
+                </div>
+                <div class="col-sm-3 text-right">
+                  <label>&nbsp;<br></label>
+                  <button class="btn btn_simulador col-xs-12">
+                    Calcular
+                  </button>
+                </div>
+                
+
+                <div class="col-sm-12">
+                  <fieldset>
+                  <legend>
+                    Resultado
+                  </legend>
+
+                  <div class="row">
+                    <div class="col-sm-1 col-xs-2 text-center">
+                      <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-5 col-xs-10 text-left group">
+                      <p>Contribuição mensal</p>
+                      <h3>30.194,00</h3>
+
+                      <p>Contribuição anual</p>
+                      <h3>530.194,00</h3>
+
+                      <p>Capital a acumular</p>
+                      <h3>27.530.194,00</h3>
+                    </div>
+
+                    <div class="col-sm-1 col-xs-2 text-center">
+                      <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-5 col-xs-10 text-left">
+                      <p>Esperança média de vida</p>
+                      <h3>26 anos</h3>
+                    </div>
+                  </div>
+                </fieldset>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-5">
+            <h3>Detalhes da simulação</h3>
+            <table class="table table-reflow">
+                <tr>
+                  <th>Idade</th>
+                  <td>35 anos</td>
+                </tr>
+                <tr>
+                  <th>Idade de reforma 
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">(?)
+                    </a>
+                  </th>
+                  <td>60 anos</td>
+                </tr>
+                <tr>
+                  <th>Data de reforma 
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Consectetur adipiscing elit lesterinam potrinca.">(?)
+                    </a>
+                  </th>
+                  <td>13 de Abril de 2043</td>
+                </tr>
+                <tr>
+                  <th>Número de anos futuros 
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Dolor sit amet, consectetur adipiscing elit.">(?)
+                    </a>
+                  </th>
+                  <td>35 anos</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 step_btn">
+            <div class="checkbox pull-left">
+              <label>
+                <input type="checkbox"> Cálculo automático
+              </label>
+            </div>
+            <a class="btn btn_simulador btn-lg pull-right" 
+              href="simulacao-individual-cen-2-passo-3.html">
+              Seguinte <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+  		<!-- Conteúdo -->
+    </div>
+
+    <footer>
+         <div class="container">
+            <div class="copy text-center">
+               Copyright 2014 <a href='#'>Website</a>
+            </div>
+         </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

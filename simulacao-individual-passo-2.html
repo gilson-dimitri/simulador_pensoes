@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOSSA SEGUROS | SIMULADOR</title>
+
+    <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-6">
+	              <!-- Logo -->
+	              <div class="logo">
+	               <h1>
+                      <a href="index.html">
+                        <img src="images/ns_logo.svg">
+                      </a>
+                </h1>
+	              </div>
+	           </div>
+	           <div class="col-md-6">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Olá <strong>Fulano de tal</strong> <b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+                            <li><a href="#"><i class="glyphicon glyphicon-time"></i> Histórico de simulações</a></li>
+	                          <li><a href="#"><i class="glyphicon glyphicon-user"></i> Meus dados</a></li>
+	                          <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Sair</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="container corpo">
+      <!-- Conteúdo -->
+        <div class="row">
+            <div class="col-md-12 breadscrumb">
+              <ul class="list-inline">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="simulacao_individual.html">Simulação Individual</a></li>
+                <li><strong>Cenário 1</strong></li>
+              </ul>
+            </div>
+          </div>
+        <div class="row steps_container">
+          <div class="col-sm-6">
+            <h4>Passo selecionado</h4>
+            <p>Etiam rutrum nibh at ipsum fermentum sagittis.<br>Vestibulum vitae congue ex, non feugiat orci.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="steps">
+              <span>1</span>
+              <span class="active">2</span>
+              <span>3</span>
+              <span>4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row box content_box">
+          <div class="col-md-6">
+            <form>
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <label class="control-label">Valor da contribuição periódica
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">(?)</a>:
+                  </label>
+                  <input class="form-control" type="text">
+                </div>
+
+                <div class="col-sm-6 form-group">
+                  <label>Periodicidade de pagamento:</label>
+                    <select class="form-control">
+                      <option>Mensal</option>
+                      <option>Trimestral</option>
+                      <option>Semestral</option>
+                      <option>Anual</option>
+                    </select> 
+                </div>
+
+                <div class="col-sm-12 form-group">
+                  <label>Estimativa de rentabilidade anual
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Sit amet, consectetur adipiscing elit.">(?)</a>:
+                  </label><br>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      1% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      2% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      3% </label>
+                    <label class="radio radio-inline">
+                      <input type="radio" name="estimativa">
+                      4% </label>
+                </div>
+                
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Detalhes da simulação</h3>
+            <table class="table table-reflow">
+                <tr>
+                  <th>Contribuição mensal</th>
+                  <td>12.000,00</td>
+                </tr>
+                <tr>
+                  <th>Contribuição anual</th>
+                  <td>15.000,00</td>
+                </tr>
+                <tr>
+                  <th>Saldo líquido acumulado em x anos
+                    <a data-toggle="tooltip" 
+                      data-placement="top" 
+                      title="Dolor sit amet, consectetur adipiscing elit.">(?)
+                    </a>
+                  </th>
+                  <td>1.039.000,00</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 step_btn">
+            <div class="checkbox pull-left">
+              <label>
+                <input type="checkbox"> Cálculo automático
+              </label>
+            </div>
+            <a class="btn btn_simulador btn-lg pull-right" 
+              href="simulacao-individual-passo-3.html">
+              Seguinte <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+  		<!-- Conteúdo -->
+    </div>
+
+    <footer>
+         <div class="container">
+            <div class="copy text-center">
+               Copyright 2014 <a href='#'>Website</a>
+            </div>
+         </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
